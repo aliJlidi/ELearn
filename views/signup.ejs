@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/signUpStyle.css">
+
+    <title>Sign Up #7</title>
+  </head>
+  <%- include('partials/menu3'); -%>
+  <body>
+  
+
+  
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+              <h3 style="color: #d87a21;">Sign Up</h3>
+             
+            </div>
+            <h3 style="color: red;"><%=text%></h3>
+            <form action="/signup" method="post">
+              <div class="form-group first">
+                <label for="fullname">Full name</label>
+                <input name="fullName" type="text" class="form-control" id="fullname" required>
+
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input name="email" type="email" class="form-control" id="email" required>
+
+              </div>
+              <div class="form-group">
+                <label for="password" >Password</label>
+                <input name="password" type="password" class="form-control" id="password" onkeyup='check();' required>
+                
+              </div>
+              <div class="form-group last mb-4">
+                <label for="re-password">Re-type Password</label>
+                <input type="password" class="form-control" name="confirm_password" id="confirm_password"  onkeyup='check();' required>
+            
+              </div>
+              <span id='message'></span>
+              <div class="d-flex mb-5 align-items-center">
+                <label class="control control--checkbox mb-0"><span class="caption">Creating an account means you're okay with our <a href="#">Terms and Conditions</a> and our <a href="#">Privacy Policy</a>.</span>
+                  <input type="checkbox" checked="checked"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </div>
+
+              <input type="submit" value="Register" class="btn btn-block btn-primary">
+
+             
+            </form>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

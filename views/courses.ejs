@@ -24,13 +24,20 @@
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
 
-
+    
+   
+    <link href="css/theme.css" rel="stylesheet" />
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
-    <link href="css/Coursestheme.css" rel="stylesheet" />
+    <link href="css/CoursesTheme.css" rel="stylesheet" />
+        <!--===============================================================================================-->
+ 
+
 
   </head>
+  <body>
+  <main class="main" id="top">
 <%- include('partials/menu'); -%>
 <div class="SlCourses">
     <h1 class="sl-learn-course_title">What would you like to learn?</h1>
@@ -109,3 +116,9 @@
      
     </section>
  </div>
+ </main>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="js/popper.min.js"></script>
+ <script src="js/main.js"></script>
+ <%- include('partials/footer'); -%>
+</body>

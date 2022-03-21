@@ -1,0 +1,2868 @@
+/*! CSS Used from: Embedded */
+/*! CSS Used from: Embedded */
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+a,
+div,
+h1,
+h3,
+img,
+p,
+span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+/*! CSS Used from: Embedded */
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.sl-oval__inner {
+	position: relative;
+	width: 110%;
+	height: 100%;
+	top: 0;
+	left: -5%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	z-index: -1;
+}
+
+@media (min-width: 600px)and (max-width: 1023px) {
+	.sl-oval__inner {
+		width: 175%;
+		left: -40%;
+	}
+}
+
+@media (max-width: 599px) {
+	.sl-oval__inner {
+		width: 175%;
+		left: -40%;
+	}
+}
+button {
+	font-family: "Fira Sans";
+}
+
+
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+section {
+	display: block;
+}
+
+a:focus {
+	outline: 0;
+}
+
+a {
+	outline: 0;
+	text-decoration: none;
+}
+
+a:focus,
+a:visited {
+	outline: 0;
+}
+
+a:focus:focus,
+a:visited:focus {
+	outline: 0;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+button {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+button {
+	line-height: normal;
+}
+
+button {
+	text-transform: none;
+}
+
+button {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+button {
+	color: #222;
+}
+
+img {
+	vertical-align: middle;
+}
+
+
+/*! CSS Used from: Embedded */
+
+button {
+	font-family: "Fira Sans";
+}
+
+
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+section {
+	display: block;
+}
+
+a:focus {
+	outline: none;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+a:focus,
+a:visited {
+	outline: none;
+}
+
+a:focus:focus,
+a:visited:focus {
+	outline: none;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+button {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	*vertical-align: middle;
+}
+
+button {
+	line-height: normal;
+}
+
+button {
+	text-transform: none;
+}
+
+button {
+	-webkit-appearance: button;
+	cursor: pointer;
+	*overflow: visible;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+button {
+	color: #222;
+}
+
+img {
+	vertical-align: middle;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.sl-profile-widget.slider {
+	padding: 24px 0 24px 24px;
+	overflow-y: inherit;
+	-webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 599px) {
+	.sl-profile-widget.slider {
+		padding: 16px 0 16px 16px;
+	}
+}
+
+.sl-profile-widget {
+	background: #fff;
+	border-radius: 8px;
+	padding: 24px;
+	overflow-y: hidden;
+	margin-bottom: 32px;
+	-webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 599px) {
+	.sl-profile-widget {
+		padding: 16px;
+		margin-bottom: 16px;
+	}
+}
+
+.sl-p-progress {
+	padding: 4px 8px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-progress {
+		padding: 0;
+	}
+}
+
+.sl-p-progress {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: #BCD0E5;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 16px;
+	border-radius: 10px;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.sl-p-progress:hover {
+	background: #eaf0f3;
+}
+
+.sl-p-progress__icon {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
+.sl-p-progress__image {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-progress__image {
+		width: 48px;
+		height: 48px;
+	}
+}
+
+.sl-p-progress__content {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.sl-p-progress__body,
+.sl-p-progress__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+}
+
+.sl-p-progress__body {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	margin: 0 16px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.sl-p-progress__body__label {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	color: #2d3846;
+	margin-bottom: 4px;
+}
+
+.sl-p-progress__body__label__name {
+	margin-right: 15px;
+	word-break: break-word;
+	text-decoration: none;
+}
+
+.sl-p-progress__body__label__sec {
+	color: #6b7f99;
+}
+
+.sl-p-progress__body__progress {
+	width: 100%;
+	background: #c8d2db;
+	border-radius: 4px;
+	height: 8px;
+}
+
+.sl-p-progress__action {
+	color: #2493df;
+	width: 24px;
+	height: 24px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
+.sl-p-courses__browse {
+	height: 48px;
+	padding: 0 60px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+	font-family: inherit;
+	-webkit-transition: background-color .1s linear;
+	-o-transition: background-color .1s linear;
+	transition: background-color .1s linear;
+}
+
+.sl-p-courses__browse:disabled {
+	pointer-events: none;
+	opacity: .5;
+}
+
+.sl-p-courses__browse {
+	color: #2493df;
+	background-color: #f9f9fa;
+	border: 1px solid #2493df;
+}
+
+.sl-p-courses__browse:hover {
+	background-color: #dbe6eb;
+}
+
+.sl-p-courses__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-bottom: 24px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-courses__header {
+		padding-bottom: 16px;
+	}
+}
+
+.sl-p-courses__title {
+	color: #2d3846;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-courses__title {
+		font-size: 16px;
+	}
+}
+
+.sl-p-courses__show-all {
+	cursor: pointer;
+	color: #2493df;
+	background: none;
+	border: none;
+	padding: 0;
+	font-family: inherit;
+}
+
+.sl-p-courses__show-all:hover {
+	color: #2aa7fd;
+}
+
+.sl-p-courses__browse {
+	height: 32px;
+	width: 100%;
+	margin-top: 16px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-courses__browse {
+		padding: 0;
+	}
+}
+
+.sl-p-cert-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.sl-p-cert-item__container {
+	padding-right: 16px;
+}
+
+.sl-p-cert-item__image {
+	background-color: aqua;
+	padding: 14px 34px;
+	margin-bottom: 8px;
+	border-radius: 4px;
+}
+
+.sl-p-cert-item__image__icon {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-cert-item__image__icon {
+		width: 52px;
+		height: 52px;
+	}
+}
+
+.sl-p-cert-item__name {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	text-align: center;
+	color: #464646;
+	width: 121px;
+	white-space: normal;
+}
+
+.sl-p-slider-arrows.slider-arrows-margin {
+	margin-right: 24px;
+}
+
+.sl-p-slider-arrows {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.sl-p-slider-arrows__arrow {
+	height: 16px;
+	width: 16px;
+	color: #2493df;
+	cursor: pointer;
+	background: transparent;
+	outline: none;
+	border: none;
+	padding: 0;
+}
+
+.sl-p-slider-arrows__arrow--previous {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	margin-right: 16px;
+}
+
+.sl-p-slider-arrows__arrow--next {
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+.sl-p-slider-arrows__arrow--disable {
+	color: #c8d2db;
+	cursor: default;
+	pointer-events: none;
+}
+
+.sl-p-certificates__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-bottom: 24px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-certificates__header {
+		padding-bottom: 16px;
+	}
+}
+
+.sl-p-certificates__title {
+	color: #2d3846;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-certificates__title {
+		font-size: 16px;
+	}
+}
+
+.sl-p-code-item {
+	padding: 4px 8px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-code-item {
+		padding: 0;
+	}
+}
+
+.sl-p-code-item {
+	margin-bottom: 16px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	border-radius: 4px;
+	opacity: 1;
+}
+
+.sl-p-code-item:hover {
+	background: #eaf0f3;
+}
+
+.sl-p-code-item__link {
+	-ms-flex-align: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	width: calc(100% - 22px);
+}
+
+.sl-p-code-item__link,
+.sl-p-code-item__link__icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.sl-p-code-item__link__icon {
+	width: 56px;
+	height: 56px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 56px;
+	flex: 0 0 56px;
+	border-radius: 4px;
+	background-color: #d66643;
+	-ms-flex-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-right: 20px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	color: #fff;
+}
+
+@media (max-width: 599px) {
+	.sl-p-code-item__link__icon {
+		width: 48px;
+		height: 48px;
+		margin-right: 18px;
+	}
+}
+
+.sl-p-code-item__link__info {
+	white-space: nowrap;
+	max-width: calc(100% - 75px);
+}
+
+.sl-p-code-item__link__name {
+	color: #2d3846;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	margin-bottom: 4px;
+}
+
+.sl-p-code-item__link__date,
+.sl-p-code-item__link__name {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-webkit-overflow-scrolling: touch;
+}
+
+.sl-p-code-item__link__date {
+	font-size: 12px;
+	line-height: 130%;
+	color: #6b7f99;
+}
+
+.sl-p-codes__add {
+	height: 48px;
+	padding: 0 60px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+	font-family: inherit;
+	-webkit-transition: background-color .1s linear;
+	-o-transition: background-color .1s linear;
+	transition: background-color .1s linear;
+}
+
+.sl-p-codes__add:disabled {
+	pointer-events: none;
+	opacity: .5;
+}
+
+.sl-p-codes__add {
+	color: #2493df;
+	background-color: #f9f9fa;
+	border: 1px solid #2493df;
+}
+
+.sl-p-codes__add:hover {
+	background-color: #dbe6eb;
+}
+
+.sl-p-codes__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-bottom: 24px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-codes__header {
+		padding-bottom: 16px;
+	}
+}
+
+.sl-p-codes__title {
+	color: #2d3846;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-codes__title {
+		font-size: 16px;
+	}
+}
+
+.sl-p-codes__show-all {
+	cursor: pointer;
+	color: #2493df;
+	background: none;
+	border: none;
+	padding: 0;
+	font-family: inherit;
+}
+
+.sl-p-codes__show-all:hover {
+	color: #2aa7fd;
+}
+
+.sl-p-codes__add {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	height: 32px;
+	margin-top: 16px;
+}
+
+.sl-p-badge-item {
+	width: 72px;
+	height: 72px;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	border: 4px solid #fff;
+	border-radius: 8px;
+	background: none;
+	font-family: inherit;
+	color: inherit;
+	padding: 0;
+}
+
+.sl-p-badge-item:hover {
+	border-color: #eaf0f3;
+}
+
+.sl-p-badge-item__image {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+
+.sl-p-task {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	border: none;
+	background: none;
+	font-family: inherit;
+	color: inherit;
+	text-align: left;
+	width: 100%;
+	padding: 0;
+}
+
+.sl-p-task:hover {
+	border-radius: 8px;
+	background-color: #eaf0f3;
+}
+
+.sl-p-task__item {
+	width: 56px;
+	height: 56px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+.sl-p-task__item__image {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+
+.sl-p-task__item__info {
+	margin-left: 12px;
+	width: 251px;
+}
+
+.sl-p-task__item__title {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	color: #2d3846;
+	margin-bottom: 4px;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	height: 19px;
+	-webkit-overflow-scrolling: touch;
+}
+
+.sl-p-task__item__description {
+	font-size: 12px;
+	line-height: 130%;
+	color: #6b7f99;
+}
+
+.sl-p-all-badges-button {
+	height: 48px;
+	padding: 0 60px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+	font-family: inherit;
+	-webkit-transition: background-color .1s linear;
+	-o-transition: background-color .1s linear;
+	transition: background-color .1s linear;
+}
+
+.sl-p-all-badges-button:disabled {
+	pointer-events: none;
+	opacity: .5;
+}
+
+.sl-p-all-badges-button {
+	color: #2493df;
+	background-color: #f9f9fa;
+	border: 1px solid #2493df;
+}
+
+.sl-p-all-badges-button:hover {
+	background-color: #dbe6eb;
+}
+
+.sl-p-badges__header,
+.sl-p-next-task__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-bottom: 24px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-badges__header,
+	.sl-p-next-task__header {
+		padding-bottom: 16px;
+	}
+}
+
+.sl-p-badges__title,
+.sl-p-next-task__title {
+	color: #2d3846;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-badges__title,
+	.sl-p-next-task__title {
+		font-size: 16px;
+	}
+}
+
+.sl-p-badges__items {
+	margin: -4px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 13px;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 599px) {
+	.sl-p-badges__items::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.sl-p-next-task {
+	padding-top: 40px;
+}
+
+.sl-p-all-badges-button {
+	margin-top: 24px;
+	width: 100%;
+	height: 32px;
+}
+
+.sl-p-code-coach__action {
+	height: 48px;
+	padding: 0 60px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+	font-family: inherit;
+	-webkit-transition: background-color .1s linear;
+	-o-transition: background-color .1s linear;
+	transition: background-color .1s linear;
+}
+
+.sl-p-code-coach__action:disabled {
+	pointer-events: none;
+	opacity: .5;
+}
+
+.sl-p-code-coach__action {
+	color: #f9f9fa;
+	background-color: #2493df;
+	border: none;
+}
+
+.sl-p-code-coach__action:hover {
+	background-color: #2aa7fd;
+}
+
+.sl-p-code-coach__container {
+	padding-right: 16px;
+}
+
+.sl-p-code-coach__item {
+	background-color: #eaf0f3;
+	border-radius: 8px;
+	border: 2px solid #eaf0f3;
+	padding: 16px;
+	width: 267px;
+	height: 100%;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 75%;
+	flex: 0 0 75%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+@media (max-width: 599px) {
+	.sl-p-code-coach__item {
+		width: 239px;
+	}
+}
+
+.sl-p-code-coach__body {
+	margin-bottom: 16px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.sl-p-code-coach__icon {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 40px;
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	margin-right: 16px;
+	background-color: #f35843;
+}
+
+.sl-p-code-coach__icon img {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+}
+
+.sl-p-code-coach__info {
+	width: calc(100% - 56px);
+}
+
+.sl-p-code-coach__name {
+	color: #2d3846;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 120%;
+	margin-bottom: 4px;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.sl-p-code-coach__description,
+.sl-p-code-coach__name {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	-webkit-overflow-scrolling: touch;
+}
+
+.sl-p-code-coach__description {
+	font-size: 12px;
+	line-height: 1.4;
+	color: #6b7f99;
+	margin-bottom: 8px;
+	max-height: 52px;
+	height: 50.4px;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.sl-p-code-coach__tags {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.sl-p-code-coach__tag {
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 120%;
+	border-radius: 20px;
+	padding: 4px 8px;
+	margin-right: 8px;
+}
+
+.sl-p-code-coach__tag--language {
+	background: #2493df;
+	color: #fff;
+}
+
+.sl-p-code-coach__tag--pro {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #ecaa00;
+	color: #6f5512;
+}
+
+.sl-p-code-coach__action {
+	width: 100%;
+	height: 32px;
+	font-size: 14px;
+	line-height: 120%;
+	padding: 0;
+}
+
+.sl-p-code-coach__action__button {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.sl-p-code-coach__action__button__icon {
+	height: 18px;
+	width: 18px;
+	margin: 0 8px;
+}
+
+.sl-p-code-coach__header__primary {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-bottom: 24px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-code-coach__header__primary {
+		padding-bottom: 16px;
+	}
+}
+
+.sl-p-code-coach__title {
+	color: #2d3846;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-code-coach__title {
+		font-size: 16px;
+	}
+}
+
+.sl-p-code-coach__header {
+	padding-bottom: 16px;
+}
+
+.sl-p-code-coach__header__primary {
+	padding-bottom: 0;
+}
+
+.sl-p-code-coach__message {
+	font-size: 12px;
+	line-height: 150%;
+	color: #6b7f99;
+	padding-right: 16px;
+}
+
+.sl-p-container__center__widgets {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+@media (min-width: 600px)and (max-width: 1023px) {
+	.sl-p-container__center__widgets {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+}
+
+.sl-p-container__center__widgets__column {
+	margin-right: 32px;
+	max-width: 367px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+}
+
+.sl-p-container__center__widgets__column:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 599px) {
+	.sl-p-container__center__widgets__column {
+		margin: 0;
+	}
+}
+
+@media (min-width: 600px)and (max-width: 1023px) {
+	.sl-p-container__center__widgets__column {
+		margin: 0;
+	}
+}
+
+@media (min-width: 1024px)and (max-width: 1366px) {
+	.sl-p-container__center__widgets__column {
+		max-width: 367px;
+	}
+}
+
+.sl-horizontal {
+	overflow: auto;
+	background: transparent;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	-webkit-overflow-scrolling: touch;
+}
+
+.sl-horizontal::-webkit-scrollbar {
+	display: none;
+}
+
+.sl-horizontal__item {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+
+/*! CSS Used fontfaces */
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff");
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff");
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.svg#FiraSans) format("svg");
+}
+
+
+/*! CSS Used from: Embedded */
+
+button {
+	font-family: "Fira Sans";
+}
+
+div,
+h3,
+img,
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+button {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+button {
+	line-height: normal;
+}
+
+button {
+	text-transform: none;
+}
+
+button {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+button {
+	color: #222;
+}
+
+img {
+	vertical-align: middle;
+}
+/*! CSS Used from: Embedded */
+
+button {
+	font-family: "Fira Sans";
+}
+
+div,
+img,
+p,
+span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+button {
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+button {
+	line-height: normal;
+}
+
+button {
+	text-transform: none;
+}
+
+button {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+button {
+	color: #222;
+}
+
+img {
+	vertical-align: middle;
+}
+
+
+/*! CSS Used from: Embedded */
+
+button {
+	font-family: "Fira Sans";
+}
+
+div,
+span,
+p,
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+
+/*! CSS Used from: Embedded */
+
+.sl-p-details-badge--secondary {
+	width: 31px;
+	height: 31px;
+	background: #fff;
+	position: absolute;
+	bottom: 6px;
+	right: 6px;
+}
+
+.sl-p-details-badge--secondary,
+.sl-p-details-badge--secondary>div {
+	border-radius: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.sl-p-details-badge--secondary>div {
+	width: 25px;
+	height: 25px;
+}
+
+.sl-p-details-badge__icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+}
+
+.sl-p-details-badge__icon--secondary {
+	width: 15px;
+	height: 15px;
+	color: #c8d2db;
+}
+
+.sl-p-details {
+	padding: 64px 0 0;
+	margin-bottom: 48px;
+}
+
+.sl-p-details,
+.sl-p-details__xp {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+}
+
+.sl-p-details__xp {
+	margin-left: 0;
+}
+
+.sl-p-details__xp-icon {
+	height: 20px;
+	width: 20px;
+	margin-right: 4px;
+	color: #ecaa00;
+}
+
+@media (min-width: 600px)and (max-width: 1023px) {
+	.sl-p-details {
+		padding: 64px 24px 0;
+	}
+}
+
+@media (max-width: 599px) {
+	.sl-p-details {
+		margin-bottom: 32px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+}
+
+.sl-p-details__avatar__wrapper {
+	margin-right: 32px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+@media (max-width: 599px) {
+	.sl-p-details__avatar__wrapper {
+		margin: 0 0 24px;
+	}
+}
+
+.sl-p-details__avatar {
+	position: relative;
+}
+
+.sl-p-details__avatar-image {
+	width: 128px;
+	height: 128px;
+	border-radius: 50%;
+}
+
+.sl-p-details__badge {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.sl-p-details__row {
+	margin-bottom: 8px;
+}
+
+.sl-p-details__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@media (max-width: 599px) {
+	.sl-p-details__info {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+}
+
+@media (min-width: 1024px) {
+	.sl-p-details__info__actions--desktop {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+@media (min-width: 600px)and (max-width: 1023px) {
+	.sl-p-details__info__actions--desktop {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+.sl-p-details__info__actions--mobile {
+	display: none;
+}
+
+@media (max-width: 599px) {
+	.sl-p-details__info__actions--desktop {
+		display: none;
+	}
+	.sl-p-details__info__actions--mobile {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+}
+
+.sl-p-details__name {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.sl-p-details__name--text {
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 120%;
+	margin-right: 24px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-details__name--text {
+		text-align: center;
+		margin: 0;
+	}
+}
+
+.sl-p-details__name--text.dark {
+	color: #fff;
+}
+
+.sl-p-details__follows {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 16px;
+	line-height: 130%;
+}
+
+.sl-p-details__follows span {
+	font-weight: 500;
+}
+
+.sl-p-details__follows.dark {
+	color: #fff;
+}
+
+.sl-p-details__follows__button {
+	border: none;
+	background: none;
+	font-family: Fira Sans;
+	font-size: 16px;
+	color: inherit;
+}
+
+.sl-p-details__follows__button:hover {
+	text-shadow: -0.025rem -0.012rem 0 currentcolor, .025rem .012rem currentcolor;
+}
+
+.sl-p-details__country-and-level {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-size: 16px;
+	line-height: 130%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-details__country-and-level {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+}
+
+.sl-p-details__country-and-level.dark {
+	color: #fff;
+}
+
+.sl-p-details__country {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.sl-p-details__country-name {
+	padding-left: 8px;
+	word-break: break-word;
+}
+
+.sl-p-details__country-flag {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.sl-p-details__country-level-seperator {
+	margin: 0 4px;
+}
+
+.sl-flag {
+	background-image: url(https://assets.sololearn.com/countryFlags.png);
+	background-repeat: no-repeat;
+	background-size: 100% 49494%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-overflow-scrolling: touch;
+}
+
+.sl-flag-HU {
+	background-position: center 36.8092%;
+}
+
+.sl-flag.sm {
+	width: 18px;
+	height: 11px;
+}
+
+.sl-flag {
+	background-image: url(https://assets.sololearn.com/countryFlags.png);
+	background-repeat: no-repeat;
+	background-size: 100% 49494%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	vertical-align: middle;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-overflow-scrolling: touch;
+}
+
+.sl-flag-HU {
+	background-position: center 36.8092%;
+}
+
+.sl-flag.sm {
+	width: 18px;
+	height: 11px;
+}
+
+
+/*! CSS Used fontfaces */
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff");
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff");
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.svg#FiraSans) format("svg");
+}
+
+/*! CSS Used from: Embedded */
+
+
+
+/*! CSS Used from: Embedded */
+
+.sl-profile-widget.slider {
+	padding: 24px 0 24px 24px;
+	overflow-y: inherit;
+	-webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 599px) {
+	.sl-profile-widget.slider {
+		padding: 16px 0 16px 16px;
+	}
+}
+
+.sl-profile-widget {
+	background: #eee;
+	border-radius: 10px;
+	padding: 24px;
+	overflow-y: hidden;
+	margin-bottom: 32px;
+	-webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 599px) {
+	.sl-profile-widget {
+		padding: 16px;
+		margin-bottom: 16px;
+	}
+}
+
+.sl-p-cert-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.sl-p-cert-item__container {
+	padding-right: 16px;
+}
+
+.sl-p-cert-item__image {
+	background-color: aqua;
+	padding: 14px 34px;
+	margin-bottom: 8px;
+	border-radius: 4px;
+}
+
+.sl-p-cert-item__image__icon {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-cert-item__image__icon {
+		width: 52px;
+		height: 52px;
+	}
+}
+
+.sl-p-cert-item__name {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	text-align: center;
+	color: #464646;
+	width: 121px;
+	white-space: normal;
+}
+
+.sl-p-slider-arrows.slider-arrows-margin {
+	margin-right: 24px;
+}
+
+.sl-p-slider-arrows {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.sl-p-slider-arrows__arrow {
+	height: 16px;
+	width: 16px;
+	color: #2493df;
+	cursor: pointer;
+	background: transparent;
+	outline: none;
+	border: none;
+	padding: 0;
+}
+
+.sl-p-slider-arrows__arrow--previous {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	margin-right: 16px;
+}
+
+.sl-p-slider-arrows__arrow--next {
+	-webkit-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+.sl-p-slider-arrows__arrow--disable {
+	color: #c8d2db;
+	cursor: default;
+	pointer-events: none;
+}
+
+.sl-p-certificates__header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-bottom: 24px;
+}
+
+@media (max-width: 599px) {
+	.sl-p-certificates__header {
+		padding-bottom: 16px;
+	}
+}
+
+.sl-p-certificates__title {
+	color: #2d3846;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+@media (max-width: 599px) {
+	.sl-p-certificates__title {
+		font-size: 16px;
+	}
+}
+
+.sl-horizontal {
+	overflow: auto;
+	background: transparent;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	-webkit-overflow-scrolling: touch;
+}
+
+.sl-horizontal::-webkit-scrollbar {
+	display: none;
+}
+
+.sl-horizontal__item {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+
+/*! CSS Used fontfaces */
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff");
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff");
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansRegular/fira-sans-v10-latin-regular.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 500;
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansMedium/fira-sans-v10-latin-500.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansSemiBold/fira-sans-v10-latin-600.svg#FiraSans) format("svg");
+}
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot);
+	src: url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.eot?#iefix) format("embedded-opentype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff2) format("woff2"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.woff) format("woff"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.ttf) format("truetype"), url(https://assets.sololearn.com/fonts/FiraSansBold/fira-sans-v10-latin-700.svg#FiraSans) format("svg");
+}
+/*******************************/
+
+/*Nav bar styles */
+/*! CSS Used from: http://localhost:3000/css/theme.css */
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul {
+	padding-left: 2rem;
+}
+
+ul {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+a {
+	color: #212832;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF9900;
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+button {
+	border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+	outline: 0;
+}
+
+button {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+button {
+	text-transform: none;
+}
+
+button,
+[type="button"] {
+	-webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+	padding: 0;
+	border-style: none;
+}
+
+.container {
+	width: 100%;
+	padding-right: var(--bs-gutter-x, 1rem);
+	padding-left: var(--bs-gutter-x, 1rem);
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1144px;
+	}
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 600;
+	line-height: 1.5;
+	white-space:nowrap;
+	color: #2F281E;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: baseline;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #D98200;
+	border: 1px solid transparent;
+	padding: 0.688rem 1.563rem;
+	font-size: 1rem;
+	border-radius: 0.25rem;
+	-webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	-o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.btn {
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+}
+
+.btn:hover {
+	color: #2F281E;
+	text-decoration: none;
+	background-color: #EAF0F3;
+}
+
+
+.btn:disabled {
+	pointer-events: none;
+	opacity: 0.65;
+}
+
+
+
+
+
+
+.collapse:not(.show) {
+	display: none;
+}
+
+.nav-link {
+	display: block;
+	padding: 0.5rem 1rem;
+	font-size: 0.88rem;
+	color: #2F281E;
+	text-decoration: none;
+	-webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+	-o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.nav-link {
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: #FF9900;
+	text-decoration: none;
+}
+
+.navbar {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-top: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+    z-index: 10;
+    background-color: white;
+}
+
+.navbar>.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: inherit;
+	flex-wrap: inherit;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.navbar-brand {
+	padding-top: 0.18213rem;
+	padding-bottom: 0.18213rem;
+	margin-right: 1rem;
+	font-size: calc(1.26738rem + 0.20859vw);
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+@media (min-width: 1200px) {
+	.navbar-brand {
+		font-size: 1.42383rem;
+	}
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+	text-decoration: none;
+}
+
+.navbar-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.navbar-nav .nav-link {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.navbar-collapse {
+	-ms-flex-preferred-size: 100%;
+	flex-basis: 100%;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.navbar-toggler {
+	padding: 0.25rem 0.75rem;
+	font-size: 1.2rem;
+	line-height: 1;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	-webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
+	transition: -webkit-box-shadow 0.15s ease-in-out;
+	-o-transition: box-shadow 0.15s ease-in-out;
+	transition: box-shadow 0.15s ease-in-out;
+	transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.navbar-toggler {
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+}
+
+.navbar-toggler:hover {
+	text-decoration: none;
+}
+
+.navbar-toggler:focus {
+	text-decoration: none;
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 0;
+	box-shadow: 0 0 0 0;
+}
+
+.navbar-toggler-icon {
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+@media (min-width: 992px) {
+	.navbar-expand-lg {
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+	}
+	.navbar-expand-lg .navbar-nav {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+	}
+	.navbar-expand-lg .navbar-collapse {
+		display: -webkit-box!important;
+		display: -ms-flexbox!important;
+		display: flex!important;
+		-ms-flex-preferred-size: auto;
+		flex-basis: auto;
+	}
+	.navbar-expand-lg .navbar-toggler {
+		display: none;
+	}
+}
+
+.navbar-light .navbar-brand {
+	color: #FF9900;
+}
+
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus {
+	color: #FF9900;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #212832;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+	color: #FF9900;
+}
+
+.navbar-light .navbar-toggler {
+	color: #212832;
+	border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23212832' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M0 6h30M0 14h30M0 22h30'/%3E%3C/svg%3E");
+}
+
+.sticky-top {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1020;
+}
+
+.d-flex {
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+}
+
+.border-top {
+	border-top: 1px solid #EEEEEE!important;
+}
+
+.mt-4 {
+	margin-top: 1.8rem!important;
+}
+
+.ms-3 {
+	margin-left: 1rem!important;
+}
+
+.ms-auto {
+	margin-left: auto!important;
+}
+
+@media (min-width: 992px) {
+	.border-lg-0 {
+		border: 0!important;
+	}
+	.mt-lg-0 {
+		margin-top: 0!important;
+	}
+	.ms-lg-4 {
+		margin-left: 1.8rem!important;
+	}
+}
+
+::-webkit-input-placeholder {
+	opacity: 1;
+	color: #E0E0E0!important;
+}
+
+::-moz-placeholder {
+	opacity: 1;
+	color: #E0E0E0!important;
+}
+
+:-ms-input-placeholder {
+	opacity: 1;
+	color: #E0E0E0!important;
+}
+
+::-ms-input-placeholder {
+	opacity: 1;
+	color: #E0E0E0!important;
+}
+
+::placeholder {
+	opacity: 1;
+	color: #E0E0E0!important;
+}
+
+button,
+.btn,
+.navbar {
+	font-family: "Poppins", "Rubik", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+ul {
+	padding-left: 1.1rem;
+}
+
+.container {
+	position: relative;
+}
+
+.navbar {
+	-webkit-transition: padding 0.3s linear;
+	-o-transition: padding 0.3s linear;
+	transition: padding 0.3s linear;
+}
+
+.btn-secondary-outline {
+	color: #173A56;
+	border-color: #BCD0E5;
+	border: 0.0625rem solid #BCD0E5;
+}
+/* Dropdown Button */
+.dropbtn {
+  height: 50px;
+  width: 50px;  
+	/*background-color: #D98200;*/
+	background-image:url("/img/user.png");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; 
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: #666666;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+/*! CSS Used fontfaces */
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2) format('woff2');
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/poppins/v19/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  /***************************/
+  /***************************/
+  

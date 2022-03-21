@@ -1,150 +1,102 @@
 //Require all the packages we need 
 const express = require("express");
+const expressLayouts = require('express-ejs-layouts');
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const session = require("express-session");
+const LocalStrategy = require('passport-local');
+//Passport is authentication middleware for Node.js. 
+const passport = require("passport");
 
+// Passport Config
+require('./config/passport')(passport);
+
+const passportLocalMongoose = require("passport-local-mongoose");
 //const _ = require("lodash");
-//use express to ease the work
+const flash = require('connect-flash');
+//use express to ease the work with requasts and responses
 const app = express();
-// set the vew engine to ejs
+
+// EJS
+app.use(expressLayouts);
+// set the view engine to ejs
 app.set('view engine', 'ejs');
+
+
+// DB Config
+const db = require('./config/keys').mongoURI;
+
+// Connect to MongoDB
+mongoose
+  .connect(
+    db,
+    { useNewUrlParser: true ,useUnifiedTopology: true}
+  )
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
+
+
 // use the bodyParser
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
 //access to the style sheets and ressorces 
 app.use(express.static("public"));
+
+// use .env to protect current project in github
+require("dotenv").config();
 // intiate the varaibles
-var fullName="";
-mongoose.connect("mongodb://localhost:27017/eLearn",{useNewUrlParser : true });
+var fullName = "";
+//initiate session entities 
+// Express session
+app.use(
+    session({
+        secret: 'secret',
+        resave: true,
+        saveUninitialized: true
+    })
+);
 
-// Create the user shcema and model 
-// adding the neptune code 
-const userSchema = {
-    fullName : String,
-    email : String,
-    password : String,
-    isSigned : Boolean
-    };
-    
-    const User = new mongoose.model("User", userSchema);
-// get the main page 
-app.get("/", (req, res)=> {
-    //checking if the user is already loged in 
-    User.find({isSigned:true},function(err, foundPerson){
-        if(foundPerson.length ==0 ){
-            res.render("index");
- 
-        }
-        else {
-            res.render("LogedIn",{Name:foundPerson[0].fullName});
-        }
-  });
-});
-// get courses
-app.get("/courses", (req, res)=> {
-   //checking if the user is already loged in 
-   User.find({isSigned:true},function(err, foundPerson){
-    if(foundPerson.length ==0 ){
-        res.render("courses");  
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
-    }
-    else {
-        res.render("LogedIn",{Name:foundPerson[0].fullName});
-    }
-
-   });
+// Connect flash
+app.use(flash());
+//mongoose.set("useCreateIndex",true);
+mongoose.connect("mongodb://localhost:27017/eLearn", {
+    useNewUrlParser: true
 });
 
-// get signin
-app.get("/signin", (req, res)=> {
-    res.render("signin",{text:""});
-    
-});
-// get signup
-app.get("/signup", (req, res)=> {
-    res.render("signup",{text:""});
-    
-});
 
-// get signout 
 
-app.get("/signout", (req, res)=> {
-    //finding the logedIn user and switched to logedOut 
-    User.findOneAndUpdate({isSigned:true}, {$set : {isSigned : false}},function(err, foundPerson){
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
-    res.redirect("/");
-    
+// Connect flash
+app.use(flash());
+
+// Global variables
+app.use(function (req, res, next) {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    next();
 });
 
-});
-//post the info from the signUp form to the database 
-
-app.post("/signup" , function(req, res){
-    const newUser = new User({
-    fullName : req.body.fullName,
-    email : req.body.email,
-    password : req.body.password,
-    isSigned : true 
-    
-    });
-   fullName = req.body.fullName;
-         //check if record exists
-User.find({email:req.body.email},function(err, foundPerson){
-    if(foundPerson.length ==0 ){
-      //insert the data into the database
-      newUser.save((err)=>err?console.log(err):res.render("logedIn",{Name: fullName}));
-    }
-    else{
-        res.render("signup",{text: "This email is already registred"});
-    }
-  });
-
-
-
-    
-    });
-
-// post login 
-app.post("/login", function (req, res) {
-            const username = req.body.email
-            const password = req.body.password
-
-            User.findOne({ email: username },function (err, foundUser){
-                    if (!foundUser) {
-                        res.render("Signin",{text:"This email is not signed In "});
-                    } else {
-                            if (foundUser.password === password) {
-                                console.log("works");
-                                User.findOneAndUpdate({email:foundUser.email}, {$set : {isSigned : true}},function(err, foundPerson){
-
-                                    res.render("LogedIn",{Name:foundPerson.fullName});
-                                    
-                                });
-                                
-                             
-                            
-                        }
-                    }
-            });
-
-        });
+// Routes
+app.use('/', require('./routes/index.js'));
+app.use('/users', require('./routes/users.js'));
+app.use('/learning', require('./routes/learning.js'));
 
 
 
 
 
+// server Listening on local Host or port defined by the domain 
 
-
-
-
-
-
-
-
-
-
-
-
-
-app.listen(process.env.PORT || 3000, function() {
+app.listen(process.env.PORT || 3000, function () {
     console.log("Server started on port 3000");
-  });
+});

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   <!-- ===============================================-->
+   <!--    Document Title-->
+   <!-- ===============================================-->
+   <title>E-Learning</title>
+
+
+   <!-- ===============================================-->
+   <!--    Favicons-->
+   <!-- ===============================================-->
+   <link rel="apple-touch-icon" sizes="180x180" href="/img/thub.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/img/thub.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/img/thub.png">
+   <link rel="shortcut icon" type="image/x-icon" href="img/thub.png">
+   <link rel="manifest" href="assets/img/favicons/manifest.json">
+   <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+   <meta name="theme-color" content="#ffffff">
+
+
+   <!-- ===============================================-->
+   <!--    Stylesheets-->
+   <!-- ===============================================-->
+   <link href="/css/profile.css" rel="stylesheet" />
+
+</head>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
+   <div class="container"><a class="navbar-brand" href="/"><img src="/img/logo.png" height="31" alt="logo" /></a>
+
+   </div>
+   <h1 style="color: #d87a21; font-weight: bold; margin-right: 10px; text-align: center;"> Welcome <%=firstName%></h1>
+   <div class="dropdown" style="margin-right: 100px;">
+      <button onclick="myFunction()" class="dropbtn"></button>
+      <div id="myDropdown" class="dropdown-content">
+         <a href="/learning/profile">Profile</a>
+         <a href="#">My Grades</a>
+         <a href="/users/logout">Sign Out</a>
+      </div>
+   </div>
+   </div>
+</nav>
+
+
+<div class="sl-p-container">
+
+   <div class="sl-p-container__center">
+      <div sl-test-data="baseElement">
+         <div class="sl-p-details dark">
+            <div class="sl-p-details__avatar__wrapper">
+               <div class="sl-p-details__avatar">
+                  <img class="sl-p-details__avatar-image" style="background-color: rgb(152, 155, 158);"
+                     src="/img/user2.png"
+                     alt="user-avatar">
+                  <div class="sl-p-details__badge">
+                     <div class="sl-p-details-badge sl-p-details-badge--secondary">
+                        <div style="background-color: rgb(236, 170, 0);">
+                           <div class="sl-p-details-badge__icon sl-p-details-badge__icon--secondary"
+                              style="color: rgb(246, 233, 200);">
+                              <svg style="width: 100%; height: 100%;">
+                                 <use xlink:href="#simpleStar"></use>
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sl-p-details__info">
+               <div class="sl-p-details__header sl-p-details__row">
+                  <div class="sl-p-details__name">
+                     <p>Neptune Code : <%=neptuneCode%></p>
+                  </div>
+                
+                       
+               </div>
+               <div class="sl-p-details__header sl-p-details__row">
+                  <div class="sl-p-details__name">
+                     <p>First name : <%=firstName%></p>
+                  </div>
+                
+                       
+               </div>
+               <div class="sl-p-details__header sl-p-details__row">
+                  <div class="sl-p-details__name">
+                     <p>Last name : <%=lastName%></p>
+                  </div>
+
+               </div>
+               <div class="sl-p-details__follows sl-p-details__row dark"><button type="button"
+                     class="sl-p-details__follows__button "><span sl-test-data="lblFollowingCount">2,328</span>
+                     Following</button><button type="button" class="sl-p-details__follows__button "><span
+                        sl-test-data="lblFollowersCount">1,454</span> <span
+                        sl-test-data="lblFollowersText">Followers</span></button></div>
+               <div class="sl-p-details__follows sl-p-details__row dark">
+                  <span class="sl-p-details__xp">
+                     <div class="sl-p-details__xp-icon">
+                        <svg style="width: 100%; height: 100%;">
+                           <use xlink:href="#simpleStar"></use>
+                        </svg>
+                     </div>
+
+                  </span>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+     
+      <section class="sl-p-container__center__widgets">
+         <div class="sl-p-container__center__widgets__column">
+            <div class="sl-profile-widget ">
+               <div class="sl-p-courses">
+                  <div class="sl-p-courses__header">
+                     <h3 class="sl-p-courses__title">Courses Progress</h3>
+                     <button class="sl-p-courses__show-all" type="button">Manage</button>
+                  </div>
+                  <%newListCourses.forEach(function(Course){%>
+                    <%console.log(Course.imgName)%>
+                    <a href="/learning/1161">
+                     <div class="sl-p-progress ">
+                      
+                        <div class="sl-p-progress__icon"><img class="sl-p-progress__image"
+                              src= "/img/<%=Course.imgName%>" alt="course-icon">
+                        </div>
+                        <div class="sl-p-progress__content">
+                           <div class="sl-p-progress__body">
+                              <div class="sl-p-progress__body__label"><span
+                                    class="sl-p-progress__body__label__name"><%=Course.title%></span><span
+                                    class="sl-p-progress__body__label__sec"><%=Course.progress%>%</span></div>
+                              <progress class="sl-p-progress__body__progress" max="1" value="<%=Course.progress/100%>"></progress>
+                           </div>
+                           <div class="sl-p-progress__action">
+                              <svg style="width: 100%; height: 100%;">
+                                 <use xlink:href="#play"></use>
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </a>
+                  <%})%>
+            
+                  <a href="/learning"><button class="sl-p-courses__browse" type="button">Browse Courses</button></a>
+               </div>
+            </div>
+            <script src="/js/jquery-3.3.1.min.js"></script>
+            <script src="/js/popper.min.js"></script>
+            <script src="/js/main.js"></script>
+            <%- include('partials/footer'); -%>

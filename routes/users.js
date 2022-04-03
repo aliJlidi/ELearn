@@ -30,6 +30,8 @@ router.post('/register', (req, res) => {
 
   if (password.length < 6) {
     errors.push({ msg: 'Password must be at least 6 characters' });
+  }if (neptuneCode.length != 6) {
+    errors.push({ msg: 'Neptune code must be equale 6 characters' });
   }
 
   if (errors.length > 0) {

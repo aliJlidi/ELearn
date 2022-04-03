@@ -330,7 +330,8 @@ textarea {
 }
 
 .sl-description-text {
-	font-family: inherit;
+	color: #000;
+	font-family: Georgia, serif;;
 	font-size: inherit;
 	font-style: inherit;
 	font-weight: inherit;
@@ -2141,7 +2142,7 @@ textarea {
 
 .monaco-editor {
 	position: relative;
-	overflow: visible;
+	overflow: hidden;
 	-webkit-text-size-adjust: 100%;
 }
 
@@ -2149,6 +2150,7 @@ textarea {
 	position: relative;
 	overflow: hidden;
 }
+
 
 .monaco-editor .view-overlays {
 	position: absolute;
@@ -2238,14 +2240,7 @@ textarea {
 	-ms-user-select: none;
 }
 
-.monaco-editor .view-lines {
-	white-space: nowrap;
-}
 
-.monaco-editor .view-line {
-	position: absolute;
-	width: 100%;
-}
 
 
 /*! CSS Used from: Embedded */
@@ -2285,7 +2280,305 @@ textarea {
 	position: absolute;
 	overflow: hidden;
 }
+/*! CSS Used from: Embedded */
 
+div,
+span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+/*! CSS Used from: Embedded */
+
+div,
+span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+/*! CSS Used from: Embedded */
+
+div,
+span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+div,
+span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+/*! CSS Used from: Embedded */
+
+::-ms-clear {
+	display: none;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.monaco-mouse-cursor-text {
+	cursor: text;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.monaco-editor.no-user-select .view-line,
+.monaco-editor.no-user-select .view-lines {
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.monaco-editor .view-lines {
+	white-space: nowrap;
+}
+
+.monaco-editor .view-line {
+	position: absolute;
+	width: 100%;
+}
+/*! CSS Used from: Embedded */
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+/*! CSS Used from: Embedded */
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+/*! CSS Used from: Embedded */
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+/*! CSS Used from: Embedded */
+
+::-ms-clear {
+	display: none;
+}
+
+.monaco-editor .view-overlays {
+	position: absolute;
+	top: 0;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.monaco-editor .view-overlays .current-line {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.monaco-editor .lines-content .core-guide {
+	position: absolute;
+	box-sizing: border-box;
+}
+
+
+/*! CSS Used from: Embedded */
+
+@media screen and (-ms-high-contrast:active) {
+	.monaco-editor.vs-dark .view-overlays .current-line {
+		border-color: windowtext!important;
+		border-left: 0;
+		border-right: 0;
+	}
+	.monaco-editor.vs-dark .view-overlays {
+		-ms-high-contrast-adjust: none;
+	}
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+	.monaco-editor .view-overlays .current-line {
+		background-color: #202122;
+	}
+	.monaco-editor .lines-content .core-guide-indent {
+		box-shadow: 1px 0 0 0 #404040 inset;
+	}
+	.monaco-editor .lines-content .core-guide-indent-active {
+		box-shadow: 1px 0 0 0 #707070 inset;
+	}
+	.monaco-editor .vertical {
+		box-shadow: 1px 0 0 0 var(--guide-color) inset;
+	}
+}
+
+/*! CSS Used from: Embedded */
+
+@media screen and (-ms-high-contrast:active) {
+	.monaco-editor.vs-dark .view-line {
+		-ms-high-contrast-adjust: none;
+	}
+	.monaco-editor.vs-dark .view-line span {
+		color: windowtext!important;
+	}
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+	.mtk1 {
+		color: #d4d4d4;
+	}
+	.mtk7 {
+		color: #608b4e;
+	}
+	.mtk8 {
+		color: #569cd6;
+	}
+	.mtk9 {
+		color: #dcdcdc;
+	}
+}
 
 /*! CSS Used from: Embedded */
 

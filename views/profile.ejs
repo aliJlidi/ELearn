@@ -43,7 +43,7 @@
    <div class="dropdown" style="margin-right: 100px;">
       <button onclick="myFunction()" class="dropbtn"></button>
       <div id="myDropdown" class="dropdown-content">
-         <a href="/learning/profile">Profile</a>
+         <a href="/courses/profile">Profile</a>
          <a href="#">My Grades</a>
          <a href="/users/logout">Sign Out</a>
       </div>
@@ -125,8 +125,10 @@
                      <h3 class="sl-p-courses__title">Courses Progress</h3>
                      <button class="sl-p-courses__show-all" type="button">Manage</button>
                   </div>
+                  
                   <%newListCourses.forEach(function(Course){%>
-                    <%console.log(Course.imgName)%>
+                    
+                   
                     <a href="/learning/1161">
                      <div class="sl-p-progress ">
                       
@@ -150,10 +152,10 @@
                   </a>
                   <%})%>
             
-                  <a href="/learning"><button class="sl-p-courses__browse" type="button">Browse Courses</button></a>
+                  <a href="courses"><button class="sl-p-courses__browse" type="button">Browse Courses</button></a>
                </div>
             </div>
             <script src="/js/jquery-3.3.1.min.js"></script>
             <script src="/js/popper.min.js"></script>
             <script src="/js/main.js"></script>
-            <%- include('partials/footer'); -%>
+            

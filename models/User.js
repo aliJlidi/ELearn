@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 
 const UserSchema = new mongoose.Schema({
+  _id:mongoose.Schema.Types.ObjectId,
 
   neptuneCode: {
     type: String,
@@ -27,23 +28,15 @@ const UserSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
+  progress: {
+    type: Number
+  },
   courses: [{
-    courseId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Course"
-    },
-    title:{
-      type: String,
-      required : true
-    },
-    imgName:{
-      type: String
-
-    },
-    progress: {
-      type: Number
+    type : mongoose.Schema.Types.ObjectId,
+    ref:"Course"
+     
     }
-  }]
+  ]
 });
 
 const User = mongoose.model('User', UserSchema);

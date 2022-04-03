@@ -4,10 +4,18 @@ const expressLayouts = require('express-ejs-layouts');
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const session = require("express-session");
+var cookieParser = require('cookie-parser')
 const LocalStrategy = require('passport-local');
 //Passport is authentication middleware for Node.js. 
 const passport = require("passport");
 
+//use ajax in the client side 
+var jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const { window } = new JSDOM();
+const { document } = (new JSDOM('')).window;
+global.document = document;
+var $ = require("jquery")(window);
 // Passport Config
 require('./config/passport')(passport);
 
@@ -16,7 +24,7 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const flash = require('connect-flash');
 //use express to ease the work with requasts and responses
 const app = express();
-
+app.use(cookieParser())
 // EJS
 app.use(expressLayouts);
 // set the view engine to ejs
@@ -89,7 +97,9 @@ app.use(function (req, res, next) {
 // Routes
 app.use('/', require('./routes/index.js'));
 app.use('/users', require('./routes/users.js'));
-app.use('/learning', require('./routes/learning.js'));
+app.use('/courses', require('./routes/courses.js'));
+app.use('/lessons', require('./routes/lessons.js'));
+app.use('/compiler', require('./routes/compiler.js'));
 
 
 

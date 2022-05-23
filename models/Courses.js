@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-const schema = new mongoose.Schema;
-
 const CourseSchema = new mongoose.Schema({
  title: {
     type: String,
@@ -28,10 +26,13 @@ const CourseSchema = new mongoose.Schema({
       Exercice : {
         type: String,
         required: true
+      },
+      output : {
+        type: String,
+        required: true
       }
     }
       
- 
   ],
   users:[{
     type: mongoose.Schema.Types.ObjectId ,

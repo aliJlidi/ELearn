@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 
 const UserSchema = new mongoose.Schema({
-  _id:mongoose.Schema.Types.ObjectId,
+  
 
   neptuneCode: {
     type: String,
@@ -28,9 +28,7 @@ const UserSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
-  progress: {
-    type: Number
-  },
+ 
   courses: [{
     type : mongoose.Schema.Types.ObjectId,
     ref:"Course"

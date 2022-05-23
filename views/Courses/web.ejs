@@ -34,7 +34,6 @@
 
 
 
-
 <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
    <div class="container"><a class="navbar-brand" href="/"><img src="/img/logo.png" height="31" alt="logo" /></a>
 
@@ -64,21 +63,29 @@
                            <use xlink:href="#caretDown"></use>
                         </svg>
                      </div>
-                     <a href="courses" style="color: aliceblue;"><div class="text">Back to courses</div></a>
+                     <a href="courses" style="color: aliceblue;">
+                        <div class="text">Back to courses</div>
+                     </a>
                   </div>
                </div>
             </div>
             <div class="sl-learn-course__main">
                <div class="sl-learn-course__main__desc-wrapper">
-                  <img alt="icon" class="sl-course-desc__icon"
-                     src="/img/WebLogo.png">
+                  <img alt="icon" class="sl-course-desc__icon" src="/img/WebLogo.png">
                   <div class="sl-course-desc__texts-wrapper">
                      <h1 class="sl-course-desc__title">Web Development</h1>
-                     <span class="sl-course-desc__desc">The Web Development Fundamentals course covers the basic core technologies needed to build web pages, 
-                         including HTML, CSS, and JavaScript. As the course project, we will build a functional ticketing website from scratch.
-                          The Web Development Fundamentals course requires no prior programming experience, so let’s dive right in!</span>
+                     <span class="sl-course-desc__desc">The Web Development Fundamentals course covers the basic core
+                        technologies needed to build web pages,
+                        including HTML, CSS, and JavaScript. As the course project, we will build a functional ticketing
+                        website from scratch.
+                        The Web Development Fundamentals course requires no prior programming experience, so let’s dive
+                        right in!</span>
                   </div>
-                  <button class="btn btn-success">Enroll  </button>
+                  <form method="POST" action="/courses/enroll">
+                     <!--Enroll button is here !!! -->
+                     <button id="enroll" class="btn btn-success" href="courses/enroll" type="submit" value="Web"
+                        name="title">Enroll </button>
+                  </form>
                </div>
                <div class="sl-learn-course__main__modules-wrapper">
                   <div class="sl-modules">
@@ -94,8 +101,7 @@
                                  </defs>
                                  <foreignObject width="54" height="54">
                                     <div class="sl-circular-progress-container"><img alt="avatar"
-                                          class="sl-module__avatar"
-                                          src="/img/symbole1.png">
+                                          class="sl-module__avatar" src="/img/symbole1.png">
                                     </div>
                                  </foreignObject>
                                  <circle transform="rotate(270 27 27)" id="path" cx="27" cy="27" r="26" stroke-width="2"
@@ -108,33 +114,35 @@
                               </svg>
                            </div>
                            <span class="sl-module__title">Basic Concepts</span>
-                        
+
                         </div>
                         <div class="sl-module__body sl-module__body--visible">
                            <hr class="sl-module__body--visible__line">
                            <%newListLessons.forEach(function(lesson){%>
-                              
+
                            <div class="sl-group">
                               <div class="sl-group__dot"></div>
                               <div class="sl-group__items ">
                                  <div class="sl-group__item eom">
-                                    <a class="sl-eom-cc " href="<%=lesson.href%>">
+                                    <a class="sl-eom-cc Task" href="<%=lesson.href%>">
                                        <div class="sl-lesson-item " data-attribute="4429">
                                           <div class="sl-lesson-item__content">
-                                             <div class="sl-lesson-item__index"><%=newListLessons.indexOf(lesson)+1%> Lesson</div>
+                                             <div class="sl-lesson-item__index"><%=newListLessons.indexOf(lesson)+1%>
+                                                Lesson</div>
                                              <span class="sl-lesson-item__title"><%=lesson.title%></span>
                                           </div>
-                                   
+
                                        </div>
-                         
+
                                     </a>
                                  </div>
 
                               </div>
                            </div>
+
                            <%})%>
-                         
-    
+
+
                         </div>
                      </div>
 
@@ -142,5 +150,32 @@
                      <script src="/js/jquery-3.3.1.min.js"></script>
                      <script src="/js/popper.min.js"></script>
                      <script src="/js/main.js"></script>
-                 
+
 </body>
+<script>
+   function beforeDocumentReady() {
+
+      var x = document.getElementById("enroll");
+      let tasks = document.getElementsByClassName('Task');
+
+      var test = '<%-isUserSubscribed%>';
+      console.log(test);
+      if (test == 'true') {
+         x.style.display = "none";
+         console.log('hide');
+
+      } else {
+         x.style.display = "Block";
+         console.log(typeof(tasks))
+        for (task of tasks) {
+            console.log(task)
+            task.style.cursor = "default"
+            task.style.pointerEvents = "none";
+
+         }
+         console.log('show');
+      }
+
+   }
+   beforeDocumentReady()
+</script>a

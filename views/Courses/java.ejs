@@ -78,7 +78,10 @@
                          you’ll learn object-oriented Java programming and have the ability to write 
                          clear and valid code in almost no time at all.</span>
                   </div>
-                  <button class="btn btn-success">Enroll  </button>
+                  <form  method="POST" action="/courses/enroll">
+                     <!--Enroll button is here !!! -->
+                     <button id="enroll" class="btn btn-success" href="courses/enroll" type="submit" value="Java" name="title">Enroll  </button>
+                    </form>
                </div>
                <div class="sl-learn-course__main__modules-wrapper">
                   <div class="sl-modules">
@@ -118,7 +121,7 @@
                               <div class="sl-group__dot"></div>
                               <div class="sl-group__items ">
                                  <div class="sl-group__item eom">
-                                    <a class="sl-eom-cc " href="<%=lesson.href%>">
+                                    <a  class="sl-eom-cc Task" href="<%=lesson.href%>">
                                        <div class="sl-lesson-item " data-attribute="4429">
                                           <div class="sl-lesson-item__content">
                                              <div class="sl-lesson-item__index"><%=newListLessons.indexOf(lesson)+1%> Lesson</div>
@@ -144,3 +147,33 @@
                      <script src="/js/main.js"></script>
                  
 </body>
+<script>
+  
+  function beforeDocumentReady() {
+
+var x = document.getElementById("enroll");
+let tasks = document.getElementsByClassName('Task');
+
+var test = '<%-isUserSubscribed%>';
+console.log(test);
+if (test == 'true') {
+   x.style.display = "none";
+   console.log('hide');
+
+} else {
+   x.style.display = "Block";
+   console.log(typeof(tasks))
+  for (task of tasks) {
+      console.log(task)
+      task.style.cursor = "default"
+      task.style.pointerEvents = "none";
+
+   }
+   console.log('show');
+}
+
+}
+beforeDocumentReady()
+
+ 
+ </script>

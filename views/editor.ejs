@@ -28,9 +28,37 @@
     <!-- ===============================================-->
     <!--    Stylesheets-->
     <!-- ===============================================-->
+    <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/editor.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
     <script src="/js/jquery-3.6.0.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <style>
+      @keyframes spinner {
+        0% {
+          transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate3d(-50%, -50%, 0) rotate(360deg);
+        }
+      }
+      .spin::before {
+        animation: 1.5s linear infinite spinner;
+        animation-play-state: inherit;
+        border: solid 5px #cfd0d1;
+        border-bottom-color: #1c87c9;
+        border-radius: 50%;
+        content: "";
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 85%;
+        left: 7%;
+        transform: translate3d(-50%, -50%, 0);
+        will-change: transform;
+      }
+    </style>
 </head>
 
 
@@ -148,7 +176,9 @@
                                         <div class="shadow-root-host"></div>
                                      </div>
                                     
-                                       <button id="HButton" type="submit" value="submit" name="submit" class="sl-code-coach-actions__button sl-code-coach-actions__button--primary" style="margin-top: 10px;">
+                                       <button id="HButton" type="submit" value="submit" name="submit"
+                                        class="sl-code-coach-actions__button sl-code-coach-actions__button--primary" 
+                                        style="margin-top: 10px;" >
                                           Run
                                           <div class="sl-code-coach-actions__icon">
                                              <svg style="width: 100%; height: 100%;">
@@ -157,10 +187,12 @@
                                           </div>
                                        </button>
                                        <h1 style="margin: 10px;">output : </h1>
+                                       <div id="spin"  ></div>
                                        <div id="holder" name="holder" style="margin: 10px ; font-family: 'Courier New', Courier, monospace;"></div>
                                     </form>
+                                    
                                   </div>
-                         
+                                 
                                </div>
                             </div>
                          </div>
@@ -185,60 +217,125 @@
        <div class="monaco-status" role="complementary" aria-live="polite" aria-atomic="true"></div>
        <div class="monaco-status" role="complementary" aria-live="polite" aria-atomic="true"></div>
     </div>
+
+                             
+                                         <!--Modal bootstrap message_box --> 
+                                         <div id="myModal" class="modal" tabindex="-1" role="dialog">
+                                          <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title">Good Job &#9989</h5>
+                                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div id="Moutput" class="modal-body">
+                                                <!-- feedback goes here -->
+                                               
+                                              </div>
+                                              <div class="modal-footer">
+                                              
+                                                <button id="next" type="button" class="btn btn-primary">Next Lesson</button>
+                                               
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+                                        <!--Modal bootstrap end -->
+
+
+
  </body>
  
  
  <script>
-  
-    $(document).ready(function(){
-       var my_div = $("#holder");
-     
-       $("#HButton").on("click", ()=> {
-         setTimeout(function(){   $.ajax({
+       var progress = Number("<%-currentProgress-%>");
+       var output = "<%-lesson[0].output-%>" + "\r\n";
+       var lessonId = "<%-lessonId-%>";
+       var my_div = jQuery("#holder");
+       var lessonHref = "<%-lesson[0].href-%>";
+       var LessonNum = Number(lessonHref.substring(lessonHref.length-1));
+       var langUsed = jQuery("#lang").val();
+       jQuery("#HButton").on("click", ()=> {
+          //
+          console.log(lessonId);
+          //
+          console.log("the correct output is : "+output);
+          //Loading 
+          jQuery("#spin").addClass("spin");
+         setTimeout(function(){  
+            jQuery.ajax({
             url: "/compiler/compilecode"
          }).done(function( data ) {
             console.log( "Sample of data:", data.message );
+            //Code is wrong
             if('error' in data.message){
                var error; 
                var result;
                var message;
-               console.log($("#lang").val());
-               if($("#lang").val()=="Python"){
+               console.log(jQuery("#lang").val());
+               if(jQuery("#lang").val()=="Python"){
                   console.log("in python");
                   error = data.message.error;
                   result= error.indexOf("NameError");
                   message = error.substring(result,error.length)
                }
-               if($("#lang").val()==='Java'){
+               if(jQuery("#lang").val()==='Java'){
                   error = data.message.error;
                   result= error.indexOf("error");
                   message = error.substring(result,error.length)
                }
-               if($("#lang").val()==='C_Plus'){
+               if(jQuery("#lang").val()==='C_Plus'){
                   error = data.message.error;
                   result= error.indexOf("error");
                   message = 'wrong ! ! ! '
                }
-               if($("#lang").val()==='C_Sharp'){
+               if(jQuery("#lang").val()==='C_Sharp'){
                   error = data.message.error;
                   result= error.indexOf("error");
-                  message = error.substring(result,error.length)
+                  message = error.substring(result,error.length);
                }
                
               
+            //
                
-               
-            $('#holder').html(message);
-         }else
-         {
-            $('#holder').html(data.message.output);
+            jQuery('#holder').html(message);
          }
-         }); }, 1000);
-      
-        
-         $('#holder').html("");
+         //Code is correct 
+         else
+         {
+            // Check output 
+         if(output==data.message.output){
+           
+         jQuery('#holder').html(data.message.output);
+          
+          jQuery('#Moutput').html("Good Job ! ");
+          
+          jQuery.noConflict();
+          $("#myModal").modal('show');
+
+          if(progress - LessonNum ==-1){
+               location.href = "/courses/inc"+langUsed;
+             }
+         }
+         else{
+            jQuery('#holder').html("Verify the code please your output is : " + data.message.output +
+            "and the correct output is :" + output);
+         }   
+
          
+         }
+         jQuery("#spin").removeClass("spin");
+         
+         }); }, 2000);
+      
+         jQuery('#holder').html("");
        });
-      });
- 
+      
+       document.getElementById("next").onclick = function () {
+        location.href = "/courses/<%-lessonId-%>";
+    };
 </script>

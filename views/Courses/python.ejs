@@ -29,6 +29,8 @@
    <!--    Stylesheets-->
    <!-- ===============================================-->
    <link href="/css/learning.css" rel="stylesheet" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="/js/jquery-3.6.0.js"></script>
 
 </head>
 
@@ -78,7 +80,10 @@
                         languages on-the-go! Practice writing Python code, collect points, &amp; show off your skills
                         now!</span>
                   </div>
-                  <button class="btn btn-success">Enroll  </button>
+                  <form  method="POST" action="/courses/enroll">
+                     <!--Enroll button is here !!! -->
+                     <button id="enroll" class="btn btn-success" href="courses/enroll" type="submit" value="Python" name="title">Enroll  </button>
+                    </form>
                </div>
                <div class="sl-learn-course__main__modules-wrapper">
                   <div class="sl-modules">
@@ -118,7 +123,7 @@
                               <div class="sl-group__dot"></div>
                               <div class="sl-group__items ">
                                  <div class="sl-group__item eom">
-                                    <a class="sl-eom-cc " href="<%=lesson.href%>">
+                                    <a  class="sl-eom-cc Task" href="<%=lesson.href%>">
                                        <div class="sl-lesson-item " data-attribute="4429">
                                           <div class="sl-lesson-item__content">
                                              <div class="sl-lesson-item__index"><%=newListLessons.indexOf(lesson)+1%> Lesson</div>
@@ -139,8 +144,46 @@
                      </div>
 
 
-                     <script src="/js/jquery-3.3.1.min.js"></script>
-                     <script src="/js/popper.min.js"></script>
-                     <script src="/js/main.js"></script>
                  
 </body>
+<script>
+  
+  function beforeDocumentReady() {
+
+var x = document.getElementById("enroll");
+let tasks = document.getElementsByClassName('Task');
+
+var test = '<%-isUserSubscribed%>';
+var progress =Number('<%-Progress%>') +1 ;
+console.log(test);
+if (test == 'true') {
+   x.style.display = "none";
+   console.log('hide button');
+   for (let i=tasks.length ; i>progress ; i--){
+      console.log(i);
+      tasks[i-1].style.cursor = "default"
+      tasks[i-1].style.pointerEvents = "none";
+   }
+
+} else {
+   x.style.display = "Block";
+   console.log(typeof(tasks))
+  for (task of tasks) {
+      console.log(task)
+      task.style.cursor = "default"
+      task.style.pointerEvents = "none";
+
+   }
+   console.log('show');
+}
+
+}
+beforeDocumentReady()
+
+
+
+
+</script>
+
+<script src="/js/popper.min.js"></script>
+<script src="/js/main.js"></script>
